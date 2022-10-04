@@ -13,13 +13,14 @@ const Shop = () => {
         <div className='container-fluid'>
             <div className="container">
                 <div className="row">
-                    <div className='productContainer'>
+                    {/* <div className='productContainer'> */}
                         {
                             products.map(product => <Product
+                            key={product.id}
                             product={product}
                             ></Product>)
                         }
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         </div>
